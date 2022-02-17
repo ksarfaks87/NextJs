@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "points",
+  "info": {
+    "name": "points"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "coords1": {
+      "type": "decimal"
+    },
+    "coords2": {
+      "type": "decimal"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

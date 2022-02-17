@@ -1,0 +1,430 @@
+$var1: #252B42
+
+*, *::before, *::after
+    padding: 0
+    margin: 0
+    border: 0
+    box-sizing: border-box
+
+a
+    text-decoration: none
+
+ul, ol, li
+    list-style: none
+
+img
+    vertical-align: top
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+h1, h2, h3, h4, h5, h6
+    font-weight: inherit
+    font-size: inherit
+
+html, body
+    height: 100%
+    line-height: 1
+    font-size: 14px
+    color: $var1
+    font-weight: 500
+    font-family: 'Open Sans'
+.header
+    position: relative
+    border-bottom: 1px solid #E6E6E6
+    &-bottom__content
+        display: flex
+        align-items: center
+        justify-content: space-between
+        min-height: 65px
+        flex-wrap: wrap
+        padding: 20px 0
+        @media (max-width: 565px)
+            gap: 30px
+        &__logo
+            margin: 0 70px 0 0
+.header-img
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+
+._ibg > span
+    // position: absolute
+    width: 100%
+    height: 100%
+    // top: 0
+    // left: 0
+    object-fit: cover
+._container
+    max-width: 941px
+    margin: 0 auto
+    padding: 0 15px
+    box-sizing: content-box
+.myButton
+    display: flex
+    min-height: 40px
+    width: 150px
+    align-items: center
+    justify-content: center
+    padding: 0 29px
+    color: #fff
+    font-size: 13px
+    background: #00A4E5
+    transition: .3s background
+    &:hover
+        background: #046288
+
+.header-top
+    position: relative
+    z-index: 5
+    padding: 41px 0 71px 0
+    &__info
+        position: relative
+        color: #fff
+        text-align: center
+        padding-bottom: 221px
+        @media (max-width: 768px)
+            padding-bottom: 150px
+    &__title
+        font-size: 60px
+        line-height: 70px
+        letter-spacing: 5.70937px
+        @media (max-width: 700px)
+            font-size: 40px
+    &__subtitle
+        font-size: 16px
+        line-height: 19px
+    &__scroll
+        display: block
+        text-align: center
+    &__article
+        display: inline-block
+        position: relative
+        color: #fff
+        cursor: pointer
+    &__logo
+        position: relative
+        text-align: center
+        margin-bottom: 381px
+        @media (max-width: 768px)
+            margin-bottom: 200px
+.menu
+    &-list
+        display: flex
+        gap: 30px
+        @media (max-width: 565px)
+            flex-wrap: wrap
+    &-link
+        color: #48555B
+        transition: .3s color
+        font-weight: 700
+        cursor: pointer
+        &:hover
+            color: #00A4E5
+
+.story
+    padding: 56px 0 0 0
+    margin: 0 0 65px 0
+    &-header
+        text-align: center
+        padding: 0 0 70px 0
+    &-title
+        position: relative
+        display: flex
+        justify-content: center
+        font-size: 18px
+        font-weight: 800
+        line-height: 21px
+        letter-spacing: 2.30625px
+        color: #48555B
+        padding: 0 0 10px 0
+        &::before
+            content: ''
+            display: block
+            width: 50px
+            height: 2px
+            position: absolute
+            bottom: 0
+            background-color: #00A4E5
+    &-body
+        display: flex
+        gap: 74.9px
+        @media (max-width: 980px)
+            flex-wrap: wrap
+            justify-content: center
+            gap: 50px
+    &-column
+        display: flex
+        @media (max-width: 480px)
+            flex-wrap: wrap
+        &__title
+            font-weight: 800
+            font-size: 20px
+            line-height: 23px
+            letter-spacing: 0.1875px
+            color: #48555B
+        &__subtitle
+            font-size: 13px
+            line-height: 177%
+            letter-spacing: 0.1875px
+            color: #48555B
+        &__left
+            flex: 0 0 44%
+            flex-direction: column
+            gap: 30px
+            @media (max-width: 980px)
+                flex: 0 0 80%
+                text-align: center
+        &__right
+            width: 100%
+            gap: 20px
+    &-item
+        width: 100%
+        position: relative
+        &__content
+            min-height: 224px
+        &__text
+            position: absolute
+            top: 0
+            left: 0
+            font-size: 24px
+
+            line-height: 121%
+            font-weight: 800
+            letter-spacing: 0.1875px
+            color: #FFFFFF
+            padding: 15px 0 0 15px
+//// capabilities /////////import css-variables from 
+.capabilities
+    padding: 40px 0 115px 0
+    @media (max-width: 550px)
+        padding: 40px 0 25px 0
+    &-header
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        padding: 0 0 78px 0
+        gap: 50px
+        @media (max-width: 874px)
+            justify-content: center
+        &__title
+            position: relative
+            display: flex
+            align-items: center
+            font-size: 18px
+            line-height: 21px
+            letter-spacing: 2.30625px
+            color: #48555B
+            padding: 0 0 10px 0
+            font-weight: 700
+            &::before
+                content: ''
+                display: block
+                width: 50px
+                height: 2px
+                position: absolute
+                bottom: 0
+                left: 0
+                background-color: #00A4E5
+        &__content
+            display: flex
+            gap: 32px
+            flex-wrap: wrap
+            @media (max-width: 635px)
+                justify-content: center
+        &__text
+            font-size: 11px
+            line-height: 173%
+            letter-spacing: 0.2px
+            color: #48555B
+            padding: 0 10px
+    &-main
+        display: flex
+        gap: 25px
+        @media (max-width: 750px)
+            flex-wrap: wrap
+            justify-content: center
+    &-card
+        display: flex
+        width: 33.333333%
+        flex-direction: column
+        padding: 38px 23px
+        border: 1px solid #E6E6E6
+        @media (max-width: 750px)
+            width: calc( 50% - 13px )
+        @media (max-width: 550px)
+            width: 100%
+        &__icon
+            width: 65.62px
+            padding: 0 0 25px 0
+            img
+                width: 100%
+                height: 100%
+                object-fit: contain
+        &__title
+            font-size: 16px
+            line-height: 150%
+            letter-spacing: 0.426667px
+            color: #48555B
+            font-weight: 700
+            padding: 0 0 13px 0
+        &__text
+            font-size: 13px
+            line-height: 177%
+            letter-spacing: 0.1875px
+            color: #48555B
+.wantToBuild
+    &-top
+        position: relative
+        z-index: 5
+        &__cover
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+        &__container
+            padding: 120px 15px 221px 15px
+        &__content
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 35px
+            position: relative
+        &__title
+            font-size: 30px
+            text-align: center
+            line-height: 120%
+            font-weight: 700
+            letter-spacing: 0.15px
+            color: #48555B
+    &-bottom
+        background: #171819
+        padding: 30px 0
+        margin-bottom: -1px
+        &__content
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 70px
+            flex-wrap: wrap
+            @media (max-width: 716px)
+                gap: 50px
+        &__title
+            color: #ffff
+            font-size: 22px
+            line-height: 26px
+            letter-spacing: 0.846154px
+            font-weight: 700
+.form
+    display: flex
+    &-input
+        min-height: 40px
+        width: 100%
+        padding: 11px 16px
+.footer
+    color: #fff
+    &-top
+        background: #141A20
+        padding: 42px 0 40px 0
+    &-container
+        display: flex
+        @media (max-width: 850px)
+            flex-wrap: wrap
+            gap: 30px
+    &-item
+        &__title
+            font-size: 11px
+            line-height: 13px
+            letter-spacing: 0.846154px
+            &.title__first
+                padding: 0 0 19px 0
+            &.title__second
+                padding: 0 0 10px 0
+            &.title__third
+                padding: 0 0 15px 0
+        &__logo
+            padding: 0 0 15px 0
+        &__text
+            font-size: 11px
+            line-height: 173%
+            letter-spacing: 0.85px
+        &__first
+            width: 26.9%
+            margin: 0 71px 0 0
+            @media (max-width: 850px)
+                margin: 0
+            @media (max-width: 631px)
+                width: 50%
+        &__second
+            margin: 0 58px 0 0
+            @media (max-width: 850px)
+                margin: 0
+
+        &__third
+            width: 15%
+            margin: 0 46px 0 0
+            @media (max-width: 850px)
+                margin: 0
+                width: auto
+            @media (max-width: 608px)
+                width: 100%
+        &__nav
+            display: flex
+            gap: 35px
+        &__contacts >*
+            color: #fff
+            font-size: 11px
+            line-height: 145%
+            letter-spacing: 0.846154px
+            transition: .3s color
+            &:hover
+                color: #00A4E5
+        &__contacts
+            display: flex
+            flex-direction: column
+            gap: 16px
+        &__social
+            display: flex
+            gap: 25px
+            &>*
+                cursor: pointer
+    &-bottom
+        background: #171819
+        padding: 22px 0
+        margin-top: -1px
+
+        &__created
+            text-align: center
+            font-size: 11px
+            line-height: 13px
+            letter-spacing: 0.846154px
+    &-menu
+        display: flex
+        flex-direction: column
+
+        &__item
+            font-size: 11px
+            line-height: 227%
+            letter-spacing: 0.846154px
+            white-space: nowrap
+        &__link
+            color: #fff
+            transition: .3s color
+            &:hover
+                color: #00A4E5
+.posts
+    &-container
+        position: relative
+        padding-top: 50px
+        padding-bottom: 50px
+    &-title
+        text-align: center
+        font-size: 25px
+        font-weight: 700
+        margin-bottom: 25px
+        color: navy
+    &_cover
+        position: relative

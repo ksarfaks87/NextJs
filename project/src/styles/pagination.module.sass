@@ -1,0 +1,47 @@
+.paginationContainer
+    display: flex
+    justify-content: center
+
+.ul
+    list-style: none
+    display: inline-flex
+    align-items: center
+    padding: 8px
+    margin: 0 auto
+    gap: 20px
+    background: aqua
+.previous, .next
+    cursor: pointer
+    transition: .3s color
+    &:hover
+        color: #fff
+.previousLi
+    cursor: text
+    &:hover
+        color: inherit
+
+.li
+    cursor: pointer
+    transition: .3s color
+    &:hover
+        color: #fff
+.active
+    border-radius: 50%
+    background: azure
+    padding: 2px 7px
+.main_content
+    display: flex
+    gap: 30px
+.date
+    &_container
+        width: 30%
+    &_title
+        color: navy
+        text-align: center
+        font-size: 18px
+        font-weight: 700
+        margin-bottom: 10px
+    &_main
+        height: 20px
+        padding: 5px
+        border-radius: 5px
